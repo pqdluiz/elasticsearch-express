@@ -19,4 +19,9 @@ jobs:
         node-version: 16.x
         cache: 'yarn'
     - run: yarn install
-    - run: yarn test
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
