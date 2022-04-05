@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { Client } from "pg";
 import getClient from "../client/elasticsearch";
 
-class PhotoController {
+export class PhotoController {
   async create(
     request: Request,
     response: Response
@@ -42,7 +42,7 @@ class PhotoController {
     request: Request,
     response: Response
   ): Promise<Response<any, Record<string, any>>> {
-    const dataInicial = new Date().getTime();
+    const initialDate = new Date().getTime();
     const client = getClient();
 
     const data = (await client).search({
@@ -50,9 +50,9 @@ class PhotoController {
       size: 6000,
     });
 
-    const dataFinal = new Date().getTime();
+    const finalDate = new Date().getTime();
 
-    console.log("the result of Elasticsearch:", dataFinal - dataInicial);
+    console.log("the result of Elasticsearch:", finalDate - initialDate);
 
     return response.json(data);
   }
@@ -118,4 +118,3 @@ class PhotoController {
   }
 }
 
-export default new PhotoController();
