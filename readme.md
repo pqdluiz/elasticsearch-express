@@ -4,22 +4,34 @@
 
 ## References:
 
-* Github Actions
+```bash
+# Github Actions
 - https://docs.github.com/pt/actions
+```
 
-* Elasticsearch
+```bash
+# Elasticsearch
 - https://www.elastic.co/guide/index.html
+```
 
-* NodeJS
+```bash
+# NodeJS
 - https://nodejs.org/en/docs/
+```
 
-* PostgreSQL
+```bash
+# PostgreSQL
 - https://www.postgresql.org/docs/
+```
 
-* Gitflow
+```bash
+# Gitflow
 - https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow
+```
 
-* Docker
+```bash
+# Docker
 - https://docs.docker.com/
+```
 
-with love made by Luiz Lima <3
+**with love made by Luiz Lima <3**
