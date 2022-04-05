@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { Client } from "pg";
 
-class DBController {
+export class DBController {
   async create(
     request: Request,
     response: Response
@@ -26,4 +26,3 @@ class DBController {
   }
 }
 
-export default new DBController();

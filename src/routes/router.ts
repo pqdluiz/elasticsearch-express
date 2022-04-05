@@ -1,12 +1,13 @@
 import { Request, Response, Router } from "express";
 import getClient from "../client/elasticsearch";
-import DBController from "../controllers/db.controller";
+import { DBController } from "../controllers/db.controller";
 import { PhotoController } from "../controllers/photo.controller";
 
 const router = Router();
 const photo = new PhotoController();
+const client = new DBController();
 
-router.get("/db/create", DBController.create);
+router.get("/db/create", client.create);
 router.get("/photos/create", photo.create);
 router.get("/photos/findAll", photo.findAll);
 router.get("/photos/findById/:id", photo.findById);
