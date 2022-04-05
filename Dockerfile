@@ -8,6 +8,6 @@ RUN yarn install
 
 COPY . .
 
-EXPOSE 9200
+EXPOSE 3333
 
 CMD yarn start
