@@ -21,15 +21,15 @@ router.get("/", async (request: Request, response: Response) => {
     index: "elastic_teste",
     type: "type_elastic_teste",
     body: {
-      user: "Daniele",
+      user: "Luiz",
       password: "sd8234udf",
-      email: "dani.leao89@gmail.com",
+      email: "luizlima@example.com",
     },
   });
 
   // Fazer uma busca
 
-  return response.json(result);
+  return response.status(200).json(result);
 });
 
 export { router };

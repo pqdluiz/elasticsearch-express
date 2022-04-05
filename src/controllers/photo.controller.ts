@@ -35,7 +35,7 @@ class PhotoController {
       );
     }
 
-    return response.json({ message: "Index ok!" });
+    return response.status(201).json({ message: "Index ok!" });
   }
 
   async findAll(
@@ -94,7 +94,7 @@ class PhotoController {
       body: photo,
     });
 
-    return response.json(data);
+    return response.status(201).json(data);
   }
 
   async findByQuery(
@@ -114,7 +114,7 @@ class PhotoController {
       },
     });
 
-    return response.json(data);
+    return response.status(200).json(data);
   }
 }
 

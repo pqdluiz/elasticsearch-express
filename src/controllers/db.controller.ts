@@ -22,7 +22,7 @@ class DBController {
 
     console.log("The final result:", finalDate - initialDate);
 
-    return response.json(rows);
+    return response.status(201).json(rows);
   }
 }
 
