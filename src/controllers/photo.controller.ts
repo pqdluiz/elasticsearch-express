@@ -52,7 +52,7 @@ class PhotoController {
 
     const dataFinal = new Date().getTime();
 
-    console.log("O resultado do elasticsearch foi", dataFinal - dataInicial);
+    console.log("the result of Elasticsearch:", dataFinal - dataInicial);
 
     return response.json(data);
   }
@@ -81,7 +81,7 @@ class PhotoController {
     const photo = {
       albumid: null,
       id: 99999,
-      title: "Title De Teste",
+      title: "Test title",
       url: "https://via.placeholder.com/600/bf37f1",
       thumbnailurl: null,
     };
@@ -108,7 +108,7 @@ class PhotoController {
       body: {
         query: {
           term: {
-            "title.keyword": "Title De Teste",
+            "title.keyword": "Test Title",
           },
         },
       },
