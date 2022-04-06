@@ -2,9 +2,10 @@
   "name": "elasticsearch-express",
   "version": "1.0.0",
   "license": "MIT",
+  "author": "Luiz Lima",
   "scripts": {
     "start": "ts-node-dev src/server.ts",
-    "test": "jest --coverage",
+    "test": "jest --coverage --passWithNoTests",
     "commit": "git-cz"
   },
   "devDependencies": {
@@ -13,6 +14,7 @@
     "@types/jest": "^27.4.1",
     "@types/pg": "^7.14.5",
     "@types/supertest": "^2.0.12",
+    "ts-jest": "^27.1.4",
     "ts-node-dev": "^1.0.0-pre.65",
     "typescript": "^4.0.3"
   },

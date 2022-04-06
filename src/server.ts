@@ -9,3 +9,5 @@ app.use(router);
 app.listen(3333, () => {
   console.log(`Server started to port http://localhost:3333`);
 });
+
+export { app };
